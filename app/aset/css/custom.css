@@ -1,0 +1,434 @@
+/*All*/
+.title5
+{
+font-size: 1.64rem;
+    line-height: 110%;
+    margin: 0.82rem 0 0.656rem 0;
+}
+.title4{
+	font-size: 2.28rem;
+	line-height: 110%;
+	margin: 1.14rem 0 0.912rem 0;
+}
+h1 {
+	font-size: 5vw;
+	margin: 0;
+}
+h2 {
+	font-size: 4.60vh;
+	margin: 0;
+}
+h3 {
+	font-size: 4.20vh;
+	margin: 0;
+}
+h4 {
+	font-size: 3.40vh;
+	margin: 0;
+}
+h5 {
+	font-size: 1.80vh;
+	margin: 0;
+}
+h6 {
+	font-size: 1.50vh;
+	margin: 0;
+}
+p {
+	font-size: 2vmin;
+	margin: 0;
+}
+.btn-block{
+	width: 100%;
+}
+.slider{
+	z-index: -9999;
+}
+.logo-putih{
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+}
+.box-product {
+	width: 100%;
+	text-align: center;
+	margin-top: -58px;
+	padding-bottom: 15px;
+	z-index: 9999;
+}
+
+/*Index*/
+.icon-partner { 
+	width:100%; text-align:center; background:#FFFFFF; padding: 8px 0 8px 0; 
+	font-size:12px; font-family: "Century Gothic", "Arial Narrow";
+}
+.icon-partner h5 { margin:0; padding:0; }
+.icon-partner-img { 
+	margin:1px auto; text-align:center; display: inline-block; 
+}
+.icon-partner-img > div { 
+	width: auto; height: auto; margin: 2px 5px; float: left; 
+}
+.product {
+	border: 1px solid #E5E5E5;
+}
+.product-img{
+	margin-top: 10px;
+	width: 50%;
+}
+
+
+/*search*/
+.jumlah-penumpang{
+	border-right: 1px solid #E5E5E5;
+}
+.button-bottom
+{
+	text-transform: none !important;
+	bottom: 0 !important;
+	/*margin-top: 60px;*/
+	height: auto !important;
+
+}
+#select-dewasa{
+	font-size: 4vh !important; width: 60%; margin-left: 20px !important;
+}
+#select-anak{
+	font-size: 4vh !important; width: 60%; margin-left: 20px !important;
+}
+#select-bayi{
+	font-size: 4vh !important; width: 60%; margin-left: 20px !important;
+}
+.form-transparans
+{
+	margin: 0 !important;
+	border-bottom: none !important;
+	font-size: 3.40vh !important;
+	border:none !important;
+	background-color:transparent !important;
+	font-weight: bold !important;
+}
+.form-transparans:focus {
+	transition: none;
+	margin: 0 !important;
+	border-bottom: none !important;
+	font-size: 3.40vh !important;
+}
+
+
+/*Result*/
+
+.p1{
+	font-size: 2.25vh;
+}
+.p2{
+	font-size: 2vh;
+}
+.p3{
+	font-size: 4.50vh;
+}
+.p4{
+	font-size: 2.60vh;
+}
+
+.plane-margin{
+	margin-top: 1px;
+}
+.margin-cards{
+	margin-top: 6px;
+	border-bottom: 2px solid #f5f5f5;
+}
+
+.margin-pass-pay{
+	 margin-bottom: -50px;
+}
+.border-header2{  
+	height: 40px;
+}
+.font-margin{
+	margin-top:10px;  
+}
+
+.margin-form-header{
+	margin-top: 14px;
+}
+.font-margin-card{
+	margin-top: -15px;
+
+}
+.image-plane{
+	width: 30px;
+	margin-top: -6px;
+	margin-left: 15px;
+}
+.font-border{
+	border-right:2px solid #f5f5f5;
+}
+
+.font-header1{
+	font-size: 3.25vh;
+}
+
+.header2{
+	height: 75px;
+}
+
+.navy-blue{
+	background-color: #314754;
+}
+.font-navy{
+	color: #314754;
+}
+.fix-header2{
+	position: fixed;
+	/*top: 50px;*/
+	z-index: 999;
+	left: 0;
+	right: 0;
+	/*bottom: 75px;*/
+}
+.margin-header2{
+	margin-top: 50px;
+}
+
+.margin-header-navy{
+	margin-top: 10px;
+}
+
+
+/*Booking*/
+.form-penumpang
+{
+	margin: 0 !important;
+	border-bottom: none !important;
+	font-size: 2.8vh !important;
+	border:none !important;
+	background-color:transparent !important;
+	font-weight: bold !important;
+}
+.form-penumpang:focus {
+	transition: none;
+	margin: 0 !important;
+	border-bottom: none !important;
+	font-size: 3vh !important;
+}
+.font-navy{
+	color: #314754;
+}
+.picker__date-display, .picker__weekday-display{
+	background-color: #01579b;
+}
+div.picker__day.picker__day--infocus.picker__day--selected.picker__day--highlighted {
+	background-color: #01579b;
+}
+
+/*DEtail Payment*/
+.header-price{
+	height: 106px;
+	margin-bottom: 0;
+}
+.header-price2{
+	height: 85px;
+	margin-bottom: 0;
+}
+
+.padding-tables{
+	padding: 0;
+	border: none;
+}
+.image-plane2{
+	width: 45px;
+	margin-top: -2px;
+	margin-left: -1px;
+}
+.font-margin-card2{
+	margin-top: 14px;
+
+}
+.font-margin-card3{
+	margin-top: 23px; 
+}
+
+.font-margin-card4{
+	margin-top: 8px;   
+}
+.font-margin-card5{
+	margin-bottom: : 8px;   
+}
+
+.margin-cards2{
+	margin-top: 4px;
+	margin-bottom: 0;
+}
+.margin-cards4{
+	margin-top: 7px;
+}
+.margin-arrow{
+	margin-top: 6px;
+}
+.margin-arrow2{
+	margin-top: 6px;
+}
+.margin-cards3{
+	border-bottom: 2px solid #f5f5f5;
+}
+
+.margin-cards5{
+	margin-bottom: -20px;
+}
+.margin-fons{
+	margin-top: 15px;
+}
+.margin-cards6{
+	margin-top: -25px;
+}
+    .margin-card-plane{
+        margin-top: auto;
+      }
+      .margin-card-plane-bottom{
+        margin-bottom: 0;
+      }
+      .margin-top-tables{
+        margin-top: -7px;
+      }
+
+
+
+      /*transfer*/
+      .header-pemesanan{
+        height: 90px;
+      }
+      .back-pink{
+        background-color: #FFFBE9 !important;
+      }
+      .back-alert{
+        background-color: #FEF0EF !important;
+      }
+      .butoon-konfirmasi{
+        margin-top: -36px;
+        width: 100%;
+        height: auto;
+        text-transform: none;
+      }
+
+        /*berhasil membayar*/
+
+      .header-kode{
+          height: 90px;
+      }
+      .margin-kolaps{
+        margin-top: -14px !important;
+      }
+      .arrow-kanan{
+        margin-left: 175px;
+      }
+      .margin-email{
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .butoon-riwayat{
+        width: 100%;
+        margin-top: 45px;
+       text-transform: none;
+       height: 40px;
+      }
+
+      .padding-baten{
+      		margin-top: 7px;
+      }
+      .margin-plane-berhasil{
+      	    margin-top: -20px;
+      }
+
+/*======================================================================================================================================================================== */
+/* css halaman email 1 */
+	#hr {
+    	height:1px;
+    	border:1px;
+    	color:#000000;
+    	background-color:#333;
+    	}
+	    .buttonCircle {
+	    border-radius: 50%;
+
+	    width: 20px;
+	    height: 20px;
+	    padding: 5px;
+
+	    background: #ffffff;
+	    border: 1px solid red;
+	    color: red;
+	    text-align: center;
+		}
+		.buttonCircle99 {
+	    border-radius: 50%;
+
+	    width: 30px;
+	    height: 30px;
+	    padding: 5px;
+
+	    background: #ffffff;
+	    border: 1px solid red;
+	    color: red;
+	    text-align: center;
+		}
+    	#linebatas {
+		    border-right: solid 1px;
+		}
+    	.belakang {
+    		background-color: #E9E9E9;
+    		max-width:100%;
+  			margin: 0 auto;
+  			position: relative;
+    	}
+    	.kotak {
+    	  background-color: #ffffff;
+    	  margin: 0 20px 0px 20px;
+    	  color: #314754;
+		}
+    	.kepala {
+    		padding: 15px;
+    		color: #314754; 
+    		text-align: center;
+    	}
+    	.anakkotak1{
+    		width:20px;
+			height:600px;
+			margin: 0px;
+			margin-left: -11px;
+			background: #b11f24;
+			float left ;
+			position : relative;
+			  
+    	}
+    	.anakkotak2{
+    		background-color: #ffffff;
+    		padding: 10px;
+    	}
+    	.anakkotak3{
+    		background-color: #ffffff;
+    		padding: 10px;
+    	}
+    	.logo2 {
+    		margin-top: 20px;
+    	}
+    	.material-icons {
+    		font-size: 10px;
+    	}.kaki {
+    		padding: 15px;
+    		text-align: center;
+    	}
+ /* end css halaman email 1 */
+ 		.table1{
+ 			padding: 10px;
+ 		}
+ 		.ikon {
+ 			font-size: 50px;
+ 		}
+ 		.ikon2 {
+ 			font-size: 30px;
+ 		}
+ 		.ikon3 {
+ 			font-size: 15px;
+ 		}

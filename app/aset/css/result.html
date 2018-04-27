@@ -1,0 +1,148 @@
+  <!DOCTYPE html>
+  <html>
+  <head>  
+    <meta charset="UTF-8">
+    <title>Pointers</title>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width", initial-scale="1.0", user-scalable="no"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">   
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  </head>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+      $('.slider').slider({
+        height:200,
+        indicators:false,
+      });
+
+      $('.my-btn').sideNav({
+      menuWidth: 300, // Default is 240
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+    );
+      $('.collapsible').collapsible();
+    });
+  </script>
+  <body>
+    <ul id="slide-out" class="side-nav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="image/side-nav/office.jpg">
+        </div>
+        <a href="#!user"><img class="circle" src="image/side-nav/yuna.jpg"></a>
+        <a href="#!name"><span class="white-text name">John Doe</span></a>
+        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <div class="navbar-fixed">
+      <nav class="red">
+        <div class="nav-wrapper">
+          <ul class="left">
+            <li><a data-activates="slide-out" class="my-btn" href="#"><i class="material-icons">menu</i></a></li>
+          </ul>
+          <a href="#" class="brand-logo center">
+            <img src="image/side-nav/pointerlogoputih.gif" class="logo-putih">
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="row navy-blue header-price">
+      <div class="col s12 margin-header-navy">
+        <center>
+          <h5 class=" grey-text text-lighten-1 p4">Jakarta (CGK)<i class="tiny material-icons">arrow_forward</i>Surabaya (SUB)</h5>
+          <span class=" grey-text text-lighten-1 p3"><b>Rp1.960.000</b></span>
+          <h5 class="grey-text text-lighten-1 p4"><b>29 Agustus 2017</b></h5>
+          <h5 class="grey-text text-lighten-1 p4">1 Penumpang (1 Kali jalan)</h5>
+        </center>
+      </div>
+    </div>
+    <div class="row col s12 border-header2">
+      <div class="">
+        <a class="waves-effect waves-light btn col s4 blue lighten-5 font-navy z-depth-0"><h5 class="margin-form-header">Penerbangan</h5></a>
+        <a class="waves-effect waves-light btn col s4 blue lighten-5 font-navy z-depth-0"><h5 class="margin-form-header">Keberangkatan</h5></a>
+        <a class="waves-effect waves-light btn col s4 blue lighten-5 font-navy z-depth-0"><h5 class="margin-form-header">Harga</h5></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row margin-cards">
+        <div class="col s12">
+          <div class="col s4 image-plane">
+            <img src="http://54.169.218.195:8989/static/lion.png" class="image-plane">
+          </div>
+          <div class="col s4 font-margin-card">
+            <h5 class="left-align grey-text text-grey">Lion</h5>
+            <h5 class="font-navy"><b>20.30 - 21.23 WIB</b></h5>
+            <h5 class="font-navy">1j 8m (Langsung)</h5>
+          </div>
+          <div class="col s4 font-margin-card">
+            <h5 class="right grey-text text-darken-2"><del>535.000</del></h3>
+              <h4 class="left-align red-text text-red"><span class="p1"><b class="grey-text text-darken-3">Rp</b></span><b>500.000</b></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row margin-cards">
+          <div class="col s12">
+            <div class="col s4">
+              <img src="http://54.169.218.195:8989/static/lion.png" class="image-plane">
+            </div>
+            <div class="col s4 font-margin-card">
+              <h5 class="left-align grey-text text-grey">Lion</h5>
+              <h5 class="font-navy"><b>20.30 - 21.23 WIB</b></h5>
+              <h5 class="font-navy">1j 8m (Langsung)</h5>
+            </div>
+            <div class="col s4 font-margin-card">
+              <h5 class="right grey-text text-darken-2"><del>535.000</del></h3>
+                <h4 class="left-align red-text text-red"><span class="p1"><b class="grey-text text-darken-3">Rp</b></span><b>500.000</b></h4>
+              </div>
+            </div>
+          </div>
+          <div class="row margin-cards">
+            <div class="col s12">
+              <div class="col s4 image-plane">
+                <img src="http://54.169.218.195:8989/static/lion.png" class="image-plane">
+              </div>
+              <div class="col s4 font-margin-card">
+                <h5 class="left-align grey-text text-grey">Lion</h5>
+                <h5><b>20.30 - 21.23 WIB</b></h5>
+                <h5>1j 8m (Langsung)</h5>
+              </div>
+              <div class="col s4 font-margin-card">
+                <h5 class="right grey-text text-darken-2"><del>535.000</del></h3>
+                  <h4 class="left-align red-text text-red"><span class="p1"><b class="grey-text text-darken-3">Rp</b></span><b>500.000</b></h4>
+                </div>
+              </div>
+            </div>
+            <div class="row margin-cards">
+              <div class="col s12">
+                <div class="col s4 image-plane">
+                  <img src="http://54.169.218.195:8989/static/lion.png" class="image-plane">
+                </div>
+                <div class="col s4 font-margin-card">
+                  <h5 class="left-align grey-text text-grey">Lion</h5>
+                  <h5><b>20.30 - 21.23 WIB</b></h5>
+                  <h5>1j 8m (Langsung)</h5>
+                </div>
+                <div class="col s4 font-margin-card">
+                  <h5 class="right grey-text text-darken-2"><del>535.000</del></h3>
+                    <h4 class="left-align red-text text-red"><span class="p1"><b class="grey-text text-darken-3">Rp</b></span><b>500.000</b></h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </body>
+          </html>

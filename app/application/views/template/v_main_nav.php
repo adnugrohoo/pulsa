@@ -15,7 +15,11 @@
           <img src="<?php echo base_url(); ?>assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
+<<<<<<< HEAD
           <a href="#" class="d-block"><?php echo $this->session->userdata('adminpmi_user_name') ?></a>
+=======
+          <a href="#" class="d-block"><?php echo $this->session->userdata('adminb2c_user_name'); ?></a>
+>>>>>>> e072ae31caf8917f6623a4b13127229e29888426
         </div>
       </div>
 

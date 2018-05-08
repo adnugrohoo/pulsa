@@ -4,18 +4,17 @@ class Starter extends CI_Controller {
 
 	function __construct(){
     parent::__construct();
-    // $this->load->library(array('session'));
+    $this->load->library(array('session'));
+    $this->load->model('Menu_model','mMenu');   
   }
 
   public function index(){  
-    $logged_in = $this->session->userdata('adminb2c_logged_in') && ($this->session->userdata('adminb2c_level')=='admin');
-    if($logged_in){
-      $this->load->view('template/v_header');
-      $this->load->view('template/v_top_nav');
-      $this->load->view('template/v_control_sidebar');
-      $this->load->view('template/v_main_nav');
-      $this->load->view('template/v_content');
-      $this->load->view('template/v_footer');
+    $logged_in = $this->session->userdata('adminpmi_logged_in') && ($this->session->userdata('adminpmi_level')=='admin');
+    if($logged_in){            
+      $data['menus'] = $this->mMenu->get_menu(0);
+      $data['submenus'] = $this->mMenu->get_menu(1);     
+			$data['body'] = "template/v_content";
+      $this->load->view('template/home', $data);
     }else{ 
       redirect("Admin/dashboardlogin");
     }

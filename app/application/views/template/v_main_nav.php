@@ -4,7 +4,7 @@
     <a href="index3.html" class="brand-link">
       <img src="<?php echo base_url(); ?>assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Kullsa</span>
+      <span class="brand-text font-weight-light">SimDodar</span>
     </a>
 
     <!-- Sidebar -->
@@ -15,7 +15,7 @@
           <img src="<?php echo base_url(); ?>assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block"><?php echo $this->session->userdata('adminpmi_user_name') ?></a>
         </div>
       </div>
 
@@ -24,38 +24,42 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fa fa-dashboard"></i>
+          
+          <?php 
+          foreach ($menus as $menu) {
+          ?>
+          <li class="nav-item has-treeview">
+            <a href="<?php echo base_url(); echo $menu['url'];?>" class="nav-link">
+              <i class="nav-icon fa <?php echo $menu['icon_nav'] ?>"></i>
               <p>
-                Starter Pages
+              <?php echo $menu['menu'] ?>
+              <?php if($menu['isParent'] == 1){?>
                 <i class="right fa fa-angle-left"></i>
+              <?php
+              }
+              ?>
               </p>
             </a>
+            <?php
+            foreach ($submenus as $submenu) {
+              if ($submenu['submenu_id']==$menu['menu_id']){
+            ?>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Inactive Page</p>
+                <a href="<?php echo base_url(); echo $submenu['url'];?>" class="nav-link">
+                  <i class="fa <?php echo $submenu['icon_nav'] ?>"></i>
+                  <p><?php echo $submenu['menu'] ?></p>
                 </a>
               </li>
             </ul>
+            <?php
+              }
+            }
+            ?>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-th"></i>
-              <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
+          <?php
+          }
+          ?>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

@@ -80,6 +80,21 @@ class User_model extends CI_Model {
         $query = $this->db->get();
         return $query->result();
     }
+    
+    public function total_rows_users($keyword){
+        
+        $this->db->like('user_id', $keyword);
+        $this->db->from('users');
+        return $this->db->count_all_results();
+    }
+    
+    public function show_all_users($start,$limit,$keyword){
+        
+        $this->db->like('user_id', $keyword); 
+        $this->db->limit($limit,$start);
+        $result = $this->db->get('users');
+        return $result->result();
+    }
  
     function count_filtered()
     {
